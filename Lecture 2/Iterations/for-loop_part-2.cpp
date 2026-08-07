@@ -4,7 +4,7 @@
 using namespace std;
 int main() {   // body of the main function
 
-for (int i = 0; i < 5; i++) {   // for loop syntax -> for ( 1)initialization; 2)stopping condition; 3)step(increment)/change) {body of the for loop}
+for (int i = 0; i < 6; i++) {   // for loop syntax -> for ( 1)initialization; 2)stopping condition; 3)step(increment)/change) {body of the for loop}
     
     if (i == 2) {
         continue;   // continue statement -> skip this iteration of the loop and move to the next iteration
