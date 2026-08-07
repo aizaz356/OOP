@@ -6,7 +6,7 @@ int main() {   // body of the main function
 
 int i = 0;                            // 1)initialization(init)
 
-while (i < 6) {                       // 2)stopping condition     syntax -> while (condition) {body of the  while loop}
+while (i < 5) {                       // 2)stopping condition     syntax -> while (condition) {body of the  while loop}
        
     cout << i << endl;                // body of the while loop
 
