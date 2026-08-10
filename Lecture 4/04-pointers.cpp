@@ -1,17 +1,19 @@
+// pointers 
+
 #include <iostream>
 using namespace std;
 
 // pointer_test()
 void pointer_test() {
 
-    int x = 10;
+    int x = 25;
     cout << "Value of x itself                  : " << x << endl;
     cout << "Value of address of x              : " << &x << endl;
     // return;
 
     int *p;  // an integer pointer
 
-    p = &x;  // address-of operator
+    p = &x;  // address-of operator  (address of x)
 
     cout << "Value of p itself                       : " << p << endl;
     cout << "Value at address (pointed to by p)      : " << *p << endl;
@@ -38,8 +40,8 @@ void pointer_test_array()
 
     // return;
 
-    cout << "Inc p" << endl;
-    p++;
+    cout << "Inc p" << endl;       // Inc p -> Increment pointer
+    p++;                           // p = p +1;
     cout << " Value of p   : "  << p << endl;
     cout << " Value of *p  : " << *p << endl;
 
@@ -48,7 +50,7 @@ void pointer_test_array()
     cout << " Entering loop after resetting p --- " << endl;
 
     p = &nums[0]; // or nums
-    for ( int i = 0; i < 12; i++)
+    for ( int i = 0; i < 10; i++)
     {
         cout << "Value of p   : " << p << "   ";
         cout << "Value of *p  : " << *p << "   ";
@@ -63,23 +65,23 @@ void null_pointer_test()
 {
     int x = 25;
 
-    int *p, *q;
+    int *p, *q;      // Two integer pointers
     p = &x;
-    // q = NULL; // points to nothing
+    //q = NULL; // points to nothing
 
-    cout << " Value of p   =  : "  << p << endl;
-    cout << " Value of *p  =  : " << *p << endl;
-    cout << " Value of q   =  : "  << q << endl;
-    cout << " Value of *q  =  : " << *q << endl; // check for NULLL before using   
+    cout << " Value of p   =   "  << p << endl;
+    cout << " Value of *p  =   " << *p << endl;
+    cout << " Value of q   =   "  << q << endl;
+    cout << " Value of *q  =   " << *q << endl; // check for NULLL before using   
 }
 
 int main()
 {
-    // pointer_test();
+    pointer_test();
 
-    // pointer_test_array();
+    //pointer_test_array();
 
-    // null_pointer_test();
+    //null_pointer_test();
 
     return 0;
 }
