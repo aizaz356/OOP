@@ -72,9 +72,11 @@ void null_pointer_test()
     cout << " Value of p   =   "  << p << endl;
     cout << " Value of *p  =   " << *p << endl;
     cout << " Value of q   =   "  << q << endl;
-    cout << " Value of *q  =   " << *q << endl; // check for NULLL before using   
+    cout << " Value of *q  =   " << *q << endl; // check for NULLL before using  
+    
+    // This -- *q -- is called  NULL pointer dereferencing bcz of pointer initialize with NULL
 }
-
+                   
 int main()
 {
     pointer_test();
