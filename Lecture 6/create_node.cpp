@@ -14,6 +14,7 @@ node* create_node(node* current, int new_node_value) {
     node* n;
     n = new node;
 
+    // set values:
     n->val = new_node_value;
     n->next = NULL;
 
@@ -55,8 +56,8 @@ int main() {
     current = create_node(current, 2);
     current = create_node(current, 3);
 
-    // Create nodes 4, 5 and 6
-    for (int i = 4; i <= 6; i++) {
+    // Create nodes 4, 5 
+    for (int i = 4; i < 6; i++) {
         current = create_node(current, i);
     }
 
