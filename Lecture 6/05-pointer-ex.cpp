@@ -23,6 +23,7 @@ node* create_node(node *current, int new_node_value) {
 }
 
 // output_list():
+
 void output_list(node *h) {
     node *current = h;
     cout << " [ ";
@@ -32,7 +33,7 @@ void output_list(node *h) {
         current = current->next;
     }
     cout << " ] " << endl;
-}
+
 
 
 /*
@@ -53,9 +54,13 @@ int void sum_list(node *h) {
     
 }
 
+
+
 sum_list(head);
 output_list(head);
 */
+
+}
 
 // delete_after_node():
 void delete_after_node(node *current) {
@@ -102,3 +107,74 @@ int main () {
 
     return 0;
 }
+
+
+
+/*
+1) Creating the linked list
+
+Your list becomes:
+
+head
+ ↓
+[2] → [27] → [30] → [50] → NULL
+
+These lines:
+
+current = create_node(current, 27);
+current = create_node(current, 30);
+current = create_node(current, 50);
+
+2) output_list() 
+
+This:
+
+while (current != NULL) {
+    cout << current->val << " ";
+    current = current->next;
+}
+
+ traverses the list.
+
+Output:
+
+[ 2 27 30 50 ]
+
+3) delete_after_node() 
+
+void delete_after_node(node *current) {
+    node *temp = current->next;
+    current->next = current->next->next;
+    delete temp;
+}
+
+If current is head, then:
+
+Before:
+
+
+[2] → [27] → [30] → [50] → NULL
+ ↑
+current
+
+temp points to 27.
+
+Then:
+
+current->next = current->next->next;
+
+changes the list to:
+
+[2] ─────→ [30] → [50] → NULL
+
+4) Finally:
+
+delete temp;
+
+deletes the [27] node.
+
+So the final output is:
+
+[ 2 30 50 ]
+ 
+*/
