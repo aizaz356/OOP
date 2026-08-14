@@ -47,3 +47,38 @@ int main() {
 
     return 0;
 }
+
+
+
+/*
+
+Before deletion:
+
+head
+ ↓
+[1] -> [2] -> [3] -> NULL
+        ↑
+      delete
+
+This code:
+temp = current->next;         // makes temp point to node 2.
+
+Then:
+current->next = current->next->next;
+
+Changes the connection:
+[1] ------> [3]
+
+Finally:
+delete temp;  // deletes node 2 from memory.
+
+//// So the important delete-node pattern is:
+
+node* temp = current->next;
+current->next = current->next->next;
+delete temp;
+
+
+This works when current->next is not NULL.
+
+*/
