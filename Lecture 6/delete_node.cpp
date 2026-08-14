@@ -42,7 +42,6 @@ int main() {
         cout << current->val << " -> ";
         current = current->next;
     }
-
     cout << "NULL" << endl;
 
     return 0;
@@ -74,7 +73,8 @@ delete temp;  // deletes node 2 from memory.
 
 //// So the important delete-node pattern is:
 
-node* temp = current->next;
+node* temp;
+temp = current->next;
 current->next = current->next->next;
 delete temp;
 
