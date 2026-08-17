@@ -7,7 +7,7 @@ using namespace std;
 int main () {
 
     int x;       // same as the : ofstream   fout;
-    ofstream  fout;      // of --> output file,  fout --> fileotput
+    ofstream  fout;      // of --> output file,  fout --> fileoutput
     
 
     fout.open("sample.txt");      // write mode
