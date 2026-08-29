@@ -6,7 +6,7 @@ using namespace std;
 
 int main () {
 
-    ifstream fin;      // if --> input file,  fin --> fileinput
+    ifstream fin;      // if --> input file,  fin --> fileinput  // // fin(variable)-->data-type-->ifstream
 
     fin.open("sample.txt");
 
@@ -18,5 +18,5 @@ int main () {
 
         cout << line;
     }
-    fin.close();
+    fin.close();           // When we use file --> close
 }
