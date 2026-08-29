@@ -6,8 +6,8 @@ using namespace std;
 
 int main () {
 
-    int x;       // same as the : ofstream   fout;
-    ofstream  fout;      // of --> output file,  fout --> fileoutput
+    int x;       // same as the : ofstream   fout;                     // x(variable)-->data-type-->int
+    ofstream  fout;      // of --> output file,  fout --> fileoutput   // fout(variable)-->data-type-->ofstream
     
 
     fout.open("sample.txt");      // write mode
