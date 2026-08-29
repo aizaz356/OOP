@@ -32,7 +32,8 @@ void bin_example() {
     output_matrix(pixels, 3, 3);
 
     // writing to a file
-    ofstream fout ("data.txt", ios::binary);
+    ofstream fout("data.bin", ios::binary);   // of stream fout;       --> same as --> ofstream fout("filename");   // filename is "data.bin"
+                                              // fout.open("filename");
     for (int i = 0; i < 3; i++) 
         for (int j = 0; j < 3; j++) 
             fout.write((char *)&pixels[i][j],   sizeof(int));
@@ -48,10 +49,11 @@ void bin_example() {
     output_matrix(pixels, 3, 3);
 
     cout << "Reading again ... " << endl;
-    ifstream fin ("data.txt", ios::binary);   // try missing file
+    ifstream fin ("data.bin", ios::binary);   // try missing file
 
     // also try !fin in this condition
-    if(fin.fail()) {
+    //if(fin.fail()) {   
+    if(fin.fail()) {                                   // if(fin.fail()) --> same as -->  if(! fin)
         cout << "Failed to read file ... " << endl;
     } else {
         for(int i = 0; i < 3; i++) 
@@ -73,7 +75,7 @@ void char_example() {
     string line = "My test line ... ";
 
     fout.open(filename);            // default is ios::out, try ios::app
-    fout << line << endl;           // as sample as that!
+    fout << line << endl;           // as simple as that!
 
     fout.close();                  // need to remember this!
 
@@ -90,11 +92,11 @@ void char_example() {
 
 int main()
 {
-    cout << "int:" << sizeof(int) << endl;
+    cout << "int:" << sizeof(int) << endl;          // int is 4 bytes on most systems
     cout << "char:" << sizeof(char) << endl;
 
     char_example();
-    // bin_example();
+    //bin_example();
 
     return 0;
 }
