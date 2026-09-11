@@ -16,6 +16,8 @@ int main() {
     cout << "Absolute value of "  << ABS(-5) << endl;
 
     #define INCLUDE_INVENTORY_MODULE  // switch to include inventory module
+                                      // if switch is defined(ON), then the inventory module will be included in the code
+                                      // if switch is not defined(OFF), then the inventory module will not be included in the code
 
 
     #ifdef INCLUDE_INVENTORY_MODULE        
