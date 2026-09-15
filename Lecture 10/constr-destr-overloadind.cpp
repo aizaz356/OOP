@@ -54,7 +54,7 @@ int main () {
 
     // 1st constructor called here:
     e = new Employee();  
-    
+
 
     cout << "Salary: " << e->salary << endl;
 
