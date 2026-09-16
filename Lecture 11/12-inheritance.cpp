@@ -1,5 +1,5 @@
 // Inheritance, Function Overriding, Dynamic Array Allocation
-// new creates an object in the heap memory.
+// 'new' creates an object in the heap memory.
 // Dynamic array allocation is done using new operator. For example, to create an array of 3 points on the heap, we can use: Point *points_of_triangle = new Point[3]; This creates an array of 3 points on the heap and points_of_triangle points to the first point of the array.
 
 #include<iostream>
