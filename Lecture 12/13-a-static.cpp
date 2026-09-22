@@ -1,5 +1,10 @@
 // static variable and static method/function ,,, non-static method/function and static local variable
 
+// static variable ---> shared across all instances of the class
+// static method/function ---> can be called without an instance of the class
+// non-static method/function ---> can be called only with an instance of the class
+// static local variable ---> value persists across function calls
+
 #include<iostream>
 #include<string>
 using namespace std;
