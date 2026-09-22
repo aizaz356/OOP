@@ -1,9 +1,9 @@
 // static variable and static method/function ,,, non-static method/function and static local variable
 
-// static variable ---> shared across all instances of the class
-// static method/function ---> can be called without an instance of the class
-// non-static method/function ---> can be called only with an instance of the class
-// static local variable ---> value persists across function calls
+// static variable ---> shared across all instances/objects of the class
+// static method/function ---> can be called without an instance/object of the class
+// non-static method/function ---> can be called only with an instance/object of the class
+// static local variable ---> value persists between function calls
 
 #include<iostream>
 #include<string>
