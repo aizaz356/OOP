@@ -1,10 +1,17 @@
-// class template
-// In Java ---- called generics
-// In C++ ---- called templates
-// In Python ---- python has no data types, so no need for generics/templates
+// Linked List + push() + pop()
 
 // push() means:  Add a new element to the list    /  Add a new node to the end of the list(Add element)
 // pop()  means: removes the last node.            /  remove the last element from the list(Remove element)
+
+/*
+| Code                 | Meaning                        |
+| -------------------- | ------------------------------ |
+| `List l`             | List of integers               |
+| `head`               | Points to first node           |
+| `last`               | Points to last node            |
+| `push()`             | Adds a node at the end         |
+| `pop()`              | Removes the last node          |
+*/
 
 #include <iostream>
 using namespace std;
@@ -87,9 +94,9 @@ void List::print_list() {
 
 
 int main() {
-    List l;              // create an instance of List class   // constructor automatically called here
-    l.push(5);          // leads to segmentation fault at first
-    l.print_list();
+    List l;              // create an instance of List class // constructor automatically called here
+    l.push(5);           // adds 5 to the list
+    l.print_list();      // prints the list
 
     return 0;
 }
